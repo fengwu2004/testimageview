@@ -53,5 +53,4 @@ static NSString * reuseIdentifier = @"CustomTableViewCell";
   return cell;
 }
 
-
 @end

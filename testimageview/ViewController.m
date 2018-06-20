@@ -35,19 +35,20 @@ static NSString * reuseIdentifier = @"CustomTableViewCell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
   
-  return 1000;
-}
-
-+ (id)viewFromNibNamed:(NSString*)nibName owner:(id)owner {
-  
-  NSArray *nibview = [[NSBundle mainBundle] loadNibNamed:nibName owner:owner options:nil];
-  
-  return [nibview firstObject];
+  return 200;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   
   CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
+  
+  NSInteger row = indexPath.row;
+  
+  NSString *url = [NSString stringWithFormat:@"http://123.206.230.152/images/%ld.jpeg", row + 1];
+  
+  NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:url]];
+  
+  [cell image:[UIImage imageWithData:data]];
 
   return cell;
 }

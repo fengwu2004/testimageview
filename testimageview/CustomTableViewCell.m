@@ -32,4 +32,14 @@ static NSInteger static_count = 0;
   [super setSelected:selected animated:animated];
 }
 
+- (void)setImage:(NSString*)fileName {
+  
+  [_myimageView setImage:[UIImage imageNamed:fileName]];
+}
+
+- (void)image:(UIImage*)image {
+  
+  [_myimageView setImage:image];
+}
+
 @end

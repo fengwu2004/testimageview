@@ -10,4 +10,8 @@
 
 @interface CustomTableViewCell : UITableViewCell
 
+- (void)setImage:(NSString*)fileName;
+
+- (void)image:(UIImage*)image;
+
 @end

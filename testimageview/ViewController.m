@@ -46,9 +46,7 @@ static NSString * reuseIdentifier = @"CustomTableViewCell";
   
   NSString *url = [NSString stringWithFormat:@"http://123.206.230.152/images/%ld.jpeg", row + 1];
   
-  NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:url]];
-  
-  [cell image:[UIImage imageWithData:data]];
+  [cell imageWithUrl:url];
 
   return cell;
 }

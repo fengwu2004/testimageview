@@ -42,4 +42,26 @@ static NSInteger static_count = 0;
   [_myimageView setImage:image];
 }
 
+- (void)imageWithUrl:(NSString*)urlpath {
+  
+  if (!urlpath) {
+    
+    return;
+  }
+  
+  NSURL *url = [NSURL URLWithString:urlpath];
+  
+  NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+      
+      NSLog(@"下载完毕%@", urlpath);
+      
+      [self.myimageView setImage:[UIImage imageWithData:data]];
+    });
+  }];
+  
+  [task resume];
+}
+
 @end

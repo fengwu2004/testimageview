@@ -16,6 +16,7 @@
 		2C25BAB420D9E25D009462C9 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C25BAB320D9E25D009462C9 /* View.xib */; };
 		2C25BAB720D9E7CA009462C9 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C25BAB620D9E7CA009462C9 /* CustomTableViewCell.m */; };
 		2CCE50D620E624AE000921C6 /* CellImageDownloadQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE50D520E624AE000921C6 /* CellImageDownloadQueue.m */; };
+		2CCE50D920E6388F000921C6 /* UIImageView+asyncurl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE50D820E6388F000921C6 /* UIImageView+asyncurl.m */; };
 		2CE9495A20DD2D6300EF7EA9 /* ImageDownloadMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE9495920DD2D6300EF7EA9 /* ImageDownloadMgr.m */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,8 @@
 		2C25BAB620D9E7CA009462C9 /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		2CCE50D420E624AE000921C6 /* CellImageDownloadQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellImageDownloadQueue.h; sourceTree = "<group>"; };
 		2CCE50D520E624AE000921C6 /* CellImageDownloadQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellImageDownloadQueue.m; sourceTree = "<group>"; };
+		2CCE50D720E6388F000921C6 /* UIImageView+asyncurl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+asyncurl.h"; sourceTree = "<group>"; };
+		2CCE50D820E6388F000921C6 /* UIImageView+asyncurl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+asyncurl.m"; sourceTree = "<group>"; };
 		2CE9495820DD2D6300EF7EA9 /* ImageDownloadMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ImageDownloadMgr.h; path = testimageview/ImageDownloadMgr.h; sourceTree = "<group>"; };
 		2CE9495920DD2D6300EF7EA9 /* ImageDownloadMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ImageDownloadMgr.m; path = testimageview/ImageDownloadMgr.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +88,8 @@
 				2C25BAB620D9E7CA009462C9 /* CustomTableViewCell.m */,
 				2CCE50D420E624AE000921C6 /* CellImageDownloadQueue.h */,
 				2CCE50D520E624AE000921C6 /* CellImageDownloadQueue.m */,
+				2CCE50D720E6388F000921C6 /* UIImageView+asyncurl.h */,
+				2CCE50D820E6388F000921C6 /* UIImageView+asyncurl.m */,
 			);
 			path = testimageview;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CCE50D920E6388F000921C6 /* UIImageView+asyncurl.m in Sources */,
 				2C25BAA220D9DFE3009462C9 /* ViewController.m in Sources */,
 				2CCE50D620E624AE000921C6 /* CellImageDownloadQueue.m in Sources */,
 				2CE9495A20DD2D6300EF7EA9 /* ImageDownloadMgr.m in Sources */,

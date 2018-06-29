@@ -47,6 +47,7 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="myimageView" destination="JBW-im-MSE" id="DeC-5b-QZQ"/>
+                <outlet property="mytextLabel" destination="9gK-Pw-KTp" id="CZP-82-hG6"/>
             </connections>
             <point key="canvasLocation" x="-373" y="-74"/>
         </view>

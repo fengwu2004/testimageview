@@ -15,6 +15,8 @@
 		2C25BAAD20D9DFE4009462C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C25BAAC20D9DFE4009462C9 /* main.m */; };
 		2C25BAB420D9E25D009462C9 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C25BAB320D9E25D009462C9 /* View.xib */; };
 		2C25BAB720D9E7CA009462C9 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C25BAB620D9E7CA009462C9 /* CustomTableViewCell.m */; };
+		2CCE50D620E624AE000921C6 /* CellImageDownloadQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE50D520E624AE000921C6 /* CellImageDownloadQueue.m */; };
+		2CE9495A20DD2D6300EF7EA9 /* ImageDownloadMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE9495920DD2D6300EF7EA9 /* ImageDownloadMgr.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,10 @@
 		2C25BAB320D9E25D009462C9 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		2C25BAB520D9E7CA009462C9 /* CustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		2C25BAB620D9E7CA009462C9 /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		2CCE50D420E624AE000921C6 /* CellImageDownloadQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellImageDownloadQueue.h; sourceTree = "<group>"; };
+		2CCE50D520E624AE000921C6 /* CellImageDownloadQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellImageDownloadQueue.m; sourceTree = "<group>"; };
+		2CE9495820DD2D6300EF7EA9 /* ImageDownloadMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ImageDownloadMgr.h; path = testimageview/ImageDownloadMgr.h; sourceTree = "<group>"; };
+		2CE9495920DD2D6300EF7EA9 /* ImageDownloadMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ImageDownloadMgr.m; path = testimageview/ImageDownloadMgr.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,8 @@
 		2C25BA9120D9DFE3009462C9 = {
 			isa = PBXGroup;
 			children = (
+				2CE9495820DD2D6300EF7EA9 /* ImageDownloadMgr.h */,
+				2CE9495920DD2D6300EF7EA9 /* ImageDownloadMgr.m */,
 				2C25BA9C20D9DFE3009462C9 /* testimageview */,
 				2C25BA9B20D9DFE3009462C9 /* Products */,
 			);
@@ -75,6 +83,8 @@
 				2C25BAB320D9E25D009462C9 /* View.xib */,
 				2C25BAB520D9E7CA009462C9 /* CustomTableViewCell.h */,
 				2C25BAB620D9E7CA009462C9 /* CustomTableViewCell.m */,
+				2CCE50D420E624AE000921C6 /* CellImageDownloadQueue.h */,
+				2CCE50D520E624AE000921C6 /* CellImageDownloadQueue.m */,
 			);
 			path = testimageview;
 			sourceTree = "<group>";
@@ -151,6 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C25BAA220D9DFE3009462C9 /* ViewController.m in Sources */,
+				2CCE50D620E624AE000921C6 /* CellImageDownloadQueue.m in Sources */,
+				2CE9495A20DD2D6300EF7EA9 /* ImageDownloadMgr.m in Sources */,
 				2C25BAAD20D9DFE4009462C9 /* main.m in Sources */,
 				2C25BAB720D9E7CA009462C9 /* CustomTableViewCell.m in Sources */,
 				2C25BA9F20D9DFE3009462C9 /* AppDelegate.m in Sources */,

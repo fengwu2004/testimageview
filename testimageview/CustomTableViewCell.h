@@ -14,6 +14,10 @@
 
 - (void)image:(UIImage*)image;
 
-- (void)imageWithUrl:(NSString*)url;
+- (void)imageWithUrl:(NSString*)urlpath withIndex:(NSInteger)myIndex;
+
+- (void)pngWithUrl:(NSString*)url;
+
+- (void)jpegWithUrl:(NSString*)url;
 
 @end
